@@ -1,0 +1,36 @@
+<!DOCTYPE html> <!-- html 사용하겠다 -->
+<head> <!-- 작성할 html을 넣는곳 -->
+    <style>
+
+        body{
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 50px;
+        }
+
+        .image-container{
+            display: flex;
+            justify-content: center;
+            align-items:center;
+        }
+        img{
+            max-width: 200px; /* 이미지의 최대 넓이 */
+            max-height: 200px; /* 이미지의 최대 높이 */
+            margin: 0 10px; /* 이미지 간격 설정 */
+        }
+
+    </style>
+</head>
+
+<h1>페페 이상형 월드컵</h1>
+<body> <!-- 눈에 보이는 사물을 넣음 -->
+    <img src="./img/A.jpg" alt="A" id= "leftImg" onclick="imgClick('leftImg')"> 
+    <!-- 클릭했을 때 imgClick이라는 함수를 실행해라 imgClick 안에는 leftImg의 값이 들어감--> 
+    <!-- (/ = 최상위 위치) (../ = ./ 보다 위에) (./ = 내가 있는 이 경로에서 img라는 경로로 들어가) -->
+    <!--src : img태그가 어떤 사진을 보여줘야 할지 지정 (이미지 경로)-->
+    <img src="./img/C.jpg" alt="B" id= "rightImg" onclick="imgClick('rightImg')">
+    
+    <script src="worldcup.js"></script>
+
+</body>
+
